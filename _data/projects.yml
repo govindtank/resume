@@ -1,16 +1,32 @@
 # Projects
 # uncomment the urls if you wish to display them, and add your own URL
 
-# donutfinder.io
-- project: donutfinder.io
-  role: Founder & Primary Developer
-  duration: 2012 &mdash; Present
-  # url: "#"
-  description: Donut Locator is an open source node/ember app that lets users find donuts within a defined radius from their home.
+# Fastrrr
+- project: Fastrrr - Floating Apps
+  role: Application Developer
+  duration: Aug, 2017 &mdash; Sept, 2017
+  url: https://play.google.com/store/apps/details?id=com.heaveninfotech.fastrrr&hl=en
+  description: Open more apps at the same time in floating windows and enjoy real multitasking! Don't leave current app for a small task. Fastrrr - Floating Apps is the largest and the most advanced collection of floating mini apps.
 
-#Springfield Donut Eater's User Group
-- project: Springfield Donut Eater's User Group
-  role: Co-Founder & Organizer
-  duration: 2007 &mdash; Present
-  # url: "#"
-  description: DEUG is a local monthly meetup in Springfield where we share all the latest tips and tricks for dat donut lifestyle. I organize the group, and typically eat most of the donuts.
+# Offerzzone
+- project: Offerzzone
+  role: Application Developer
+  duration: 2016 &mdash; 2017
+  url: https://play.google.com/store/apps/details?id=com.offerzone&hl=en
+  description: OfferzZone is Hyper Local Market Application that provides information regarding nearby stores' latest offers and discounts.
+
+
+# CityTadka
+- project: CityTadka – People, Places & Stories
+  role: Application Developer
+  duration: 2016 &mdash; 2017
+  url: https://play.google.com/store/apps/details?id=stimulus.citytadka&hl=en
+  description: CityTadka is the one stop solution for a city to know its people, places, and stories. Discover some amazing unexplored places of the city, find food, fashion, and hangouts, explore city’s gems – the people, get to know about the events and shows – everything in one app.
+
+
+# OpenForBusiness
+- project: OpenForBusiness
+  role: Application Developer
+  duration: 2016 &mdash; 2017
+  url: https://play.google.com/store/apps/details?id=stimulus.openforbusiness&hl=en
+  description: Open for Business brings all kinds of mobile vendors at one place and allows them to promote their trucks and shops to their follows. People can find the vendors they are looking for through search, like them and follow them in order to get the regular updates.
