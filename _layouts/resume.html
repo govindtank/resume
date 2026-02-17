@@ -1,142 +1,158 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>{{ site.title }}</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>{{ site.resume_name }} — {{ site.resume_title }}</title>
+  <link rel="stylesheet" href="{{ '/css/style.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/css/print.css' | relative_url }}" media="print">
-  <style>
-    /* Minimal styling for clean screen resume */
-    body { font-family: "Helvetica Neue", Arial, sans-serif; color: #222; margin: 24px; }
-    .container { max-width: 900px; margin: 0 auto; }
-    header { text-align: center; margin-bottom: 14px; }
-    h1 { margin: 0; font-size: 28px; letter-spacing: .5px; }
-    .title { font-size: 14px; color: #555; margin-bottom: 4px; }
-    .contact { font-size: 13px; color: #444; margin-bottom: 14px; }
-    section { margin-bottom: 18px; }
-    .section-title { font-size: 14px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; border-bottom: 1px solid #ddd; padding-bottom: 6px; color: #111; }
-    .skill-list, .edu-list, .exp-list { list-style: none; padding: 0; margin: 0; }
-    .skill-list li { display:inline-block; margin: 4px 8px 4px 0; padding: 4px 8px; background:#f2f2f2; border-radius:3px; font-size:13px; }
-    .exp-item { margin-bottom: 10px; }
-    .exp-head { display:flex; justify-content:space-between; align-items:baseline; }
-    .company { font-weight:700; }
-    .role { font-style:italic; color:#333; }
-    .date { color:#666; font-size:13px; }
-    .bullet { margin:6px 0 6px 18px; color:#333; font-size:14px; }
-    footer { text-align:center; font-size:12px; color:#777; margin-top:20px; }
-    @media print { body { margin: 0; } .container { width: 100%; } }
-  </style>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>{{ site.resume_name }}</h1>
-      <div class="title">{{ site.resume_title }}</div>
-      <div class="contact">{{ site.resume_header_contact_info }} &nbsp; | &nbsp; <a href="mailto:{{ site.resume_contact_email }}">{{ site.resume_contact_email }}</a></div>
-      {{ site.resume_header_intro | raw }}
-    </header>
-
-    <section>
-      <div class="section-title">Technical Skills</div>
-      <ul class="skill-list">
-        <li><strong>Languages:</strong> Kotlin, Java, Dart (Flutter), TypeScript, JavaScript (Node.js), SQL</li>
-        <li><strong>Android Native:</strong> SDK, Jetpack Compose, Coroutines, StateFlow, LiveData, WorkManager, Android Auto, Material 3</li>
-        <li><strong>Flutter:</strong> Bloc, Provider, AutoRoute, Freezed, Method Channels, audio_service, Equatable</li>
-        <li><strong>Architecture:</strong> Clean Architecture, MVVM, MVI, Repository Pattern, Dagger Hilt, Koin</li>
-        <li><strong>Backend & Cloud:</strong> Node.js, Express, Firebase (Auth/Firestore/FCM), AWS CloudFront, REST, GraphQL</li>
-        <li><strong>AI & Tools:</strong> Cursor, Windsurf, Claude Code, OpenRouter API, CI/CD (GitHub Actions), Docker, Gradle</li>
-      </ul>
-    </section>
-
-    <section>
-      <div class="section-title">Professional Experience</div>
-      <div class="exp-list">
-        <div class="exp-item">
-          <div class="exp-head">
-            <div>
-              <div class="company">Rysun Labs Pvt. Ltd.</div>
-              <div class="role">Senior Software Developer L2</div>
-            </div>
-            <div class="date">Nov 2025 — Present | Ahmedabad, India</div>
-          </div>
-          <ul>
-            <li class="bullet"><strong>Secure Media Engineering:</strong> Directed overhaul of the "BAPS Prakash" application (50k+ users). Engineered secure audio streaming using <strong>AWS CloudFront Signed Cookies</strong> to prevent unauthorized access to protected content.</li>
-            <li class="bullet"><strong>Advanced Background Audio:</strong> Integrated <code>audio_service</code> for complex background tasks, lock-screen controls and Android Auto compatibility; improved accessibility and UX.</li>
-            <li class="bullet"><strong>Scalable Backend Design:</strong> Architected high-concurrency RESTful APIs using Node.js and TypeScript for an internal HCP ERP, optimizing enterprise resource allocation.</li>
-          </ul>
-        </div>
-
-        <div class="exp-item">
-          <div class="exp-head">
-            <div>
-              <div class="company">Rysun Labs Pvt. Ltd.</div>
-              <div class="role">Senior Software Developer / Project Owner</div>
-            </div>
-            <div class="date">Apr 2022 — Oct 2025 | Ahmedabad, India</div>
-          </div>
-          <ul>
-            <li class="bullet"><strong>Clean Architecture Implementation:</strong> Spearheaded "Akshar Amrutam", scaled to 100,000+ downloads with strict UI/Domain/Data separation and a 99.95% crash-free session rate.</li>
-            <li class="bullet"><strong>State Management Optimization:</strong> Used Flutter Bloc to manage complex state, maintaining 60fps across a wide device range.</li>
-            <li class="bullet"><strong>IoT & Hardware Integration:</strong> Built "Smartindia/Autozon" with real-time MQTT communication and optimized battery usage for background services.</li>
-            <li class="bullet"><strong>Global Delivery:</strong> Managed international projects (DRC USA, Max's Fun Club South Africa) ensuring timelines and quality standards.</li>
-          </ul>
-        </div>
-
-        <div class="exp-item">
-          <div class="exp-head">
-            <div>
-              <div class="company">Phycom Corporations</div>
-              <div class="role">Software Engineer - Android</div>
-            </div>
-            <div class="date">Apr 2021 — Mar 2022 | Ahmedabad, India</div>
-          </div>
-          <ul>
-            <li class="bullet"><strong>Hardware Synchronization:</strong> Engineered background services for "La Crosse View" to sync reliably with weather station hardware.</li>
-            <li class="bullet"><strong>Performance Tuning:</strong> Reduced startup time by 30% and memory footprint by 20% through profiling and optimization.</li>
-            <li class="bullet"><strong>Legacy Migration:</strong> Refactored Java codebases to Kotlin, reducing NullPointerExceptions by ~95%.</li>
-          </ul>
-        </div>
-
-        <div class="exp-item">
-          <div class="exp-head">
-            <div>
-              <div class="company">Micro App Solutions</div>
-              <div class="role">Remote Android Developer</div>
-            </div>
-            <div class="date">Aug 2017 — Dec 2019 | Surat, India</div>
-          </div>
-          <ul>
-            <li class="bullet"><strong>Utility App Development:</strong> Built "Fastrrr-Floating Apps" and "Water Reminder" handling overlay permissions and battery efficiency.</li>
-            <li class="bullet"><strong>Geospatial Tech:</strong> Built "OfferzZone," a hyper-local marketplace using Geofencing APIs for location-based notifications.</li>
-          </ul>
-        </div>
-
-        <div class="exp-item">
-          <div class="exp-head">
-            <div>
-              <div class="company">Stimulus Consultancy</div>
-              <div class="role">Android Developer</div>
-            </div>
-            <div class="date">Apr 2016 — Aug 2017 | Ahmedabad, India</div>
-          </div>
-          <ul>
-            <li class="bullet"><strong>Startup Engineering:</strong> Established CI/CD and repository structures for "City Tadka" and "Oowomaniya", reducing deployment friction.</li>
-            <li class="bullet"><strong>FinTech Logic:</strong> Implemented tax calculation logic for a GST application ensuring 100% accuracy during critical rollouts.</li>
-          </ul>
+  <div class="page">
+    <header class="site-header">
+      <div class="heading-left">
+        <h1 class="name">{{ site.resume_name }}</h1>
+        <div class="role">{{ site.resume_title }}</div>
+      </div>
+      <div class="heading-right">
+        <div class="contact-line">{{ site.resume_header_contact_info }}</div>
+        <div class="contact-links">
+          <a href="{{ site.resume_social_links.resume_github_url }}" target="_blank">GitHub</a>
+          <span class="sep">•</span>
+          <a href="{{ site.resume_social_links.resume_linkedin_url }}" target="_blank">LinkedIn</a>
+          <span class="sep">•</span>
+          <a href="mailto:{{ site.resume_contact_email }}">{{ site.resume_contact_email }}</a>
         </div>
       </div>
-    </section>
+    </header>
 
-    <section>
-      <div class="section-title">Education</div>
-      <ul class="edu-list">
-        <li style="margin-bottom:10px;"><strong>Master of Computer Applications (M.C.A.)</strong>, AES College of Computer Science, Ahmedabad University — 2013–2015</li>
-        <li><strong>Bachelor of Computer Applications (B.C.A.)</strong>, Navgujarat College of Computer Applications, Gujarat University — 2010–2013</li>
-      </ul>
-    </section>
+    <main class="layout">
+      <aside class="sidebar">
+        <section class="card">
+          <h3 class="card-title">Summary</h3>
+          <div class="summary">{{ site.resume_header_intro | raw }}</div>
+        </section>
 
-    <footer>
-      <div>GitHub: <a href="{{ site.resume_social_links.resume_github_url }}">{{ site.resume_social_links.resume_github_url | replace: "https://", "" }}</a> &nbsp; | &nbsp; LinkedIn: <a href="{{ site.resume_social_links.resume_linkedin_url }}">{{ site.resume_social_links.resume_linkedin_url | replace: "https://", "" }}</a></div>
+        <section class="card">
+          <h3 class="card-title">Technical Skills</h3>
+          <ul class="skills">
+            <li><strong>Languages:</strong> Kotlin, Java, Dart, TypeScript, JavaScript, SQL</li>
+            <li><strong>Android:</strong> Jetpack Compose, Coroutines, StateFlow, WorkManager, Android Auto</li>
+            <li><strong>Flutter:</strong> Bloc, Provider, Freezed, AutoRoute, Method Channels</li>
+            <li><strong>Architecture:</strong> Clean Architecture, MVVM/MVI, DI (Hilt/Koin)</li>
+            <li><strong>Backend/Cloud:</strong> Node.js, Firebase, AWS CloudFront, REST, GraphQL</li>
+            <li><strong>Tools:</strong> GitHub Actions, Docker, Gradle</li>
+          </ul>
+        </section>
+
+        <section class="card">
+          <h3 class="card-title">Links</h3>
+          <ul class="links">
+            <li><a href="{{ site.resume_social_links.resume_website_url }}" target="_blank">Portfolio</a></li>
+            <li><a href="{{ site.resume_social_links.resume_github_url }}" target="_blank">GitHub</a></li>
+            <li><a href="{{ site.resume_social_links.resume_linkedin_url }}" target="_blank">LinkedIn</a></li>
+          </ul>
+        </section>
+      </aside>
+
+      <section class="content">
+        <section class="section">
+          <h2 class="section-title">Professional Experience</h2>
+
+          <article class="job">
+            <header class="job-head">
+              <div>
+                <div class="job-company">Rysun Labs Pvt. Ltd.</div>
+                <div class="job-role">Senior Software Developer L2</div>
+              </div>
+              <div class="job-date">Nov 2025 — Present<br/><span class="job-location">Ahmedabad, India</span></div>
+            </header>
+            <ul class="bullets">
+              <li><strong>Secure Media Engineering:</strong> Directed the complete overhaul of the "BAPS Prakash" application (50k+ users). Engineered a secure audio streaming engine using <strong>AWS CloudFront Signed Cookies</strong> to prevent unauthorized access to copyright-protected content.</li>
+              <li><strong>Advanced Background Audio:</strong> Integrated <code>audio_service</code> to manage complex background tasks, lock-screen controls, and Android Auto compatibility.</li>
+              <li><strong>Scalable Backend Design:</strong> Architected high-concurrency RESTful APIs using Node.js and TypeScript for an internal HCP ERP system.</li>
+            </ul>
+          </article>
+
+          <article class="job">
+            <header class="job-head">
+              <div>
+                <div class="job-company">Rysun Labs Pvt. Ltd.</div>
+                <div class="job-role">Senior Software Developer / Project Owner</div>
+              </div>
+              <div class="job-date">Apr 2022 — Oct 2025<br/><span class="job-location">Ahmedabad, India</span></div>
+            </header>
+            <ul class="bullets">
+              <li><strong>Clean Architecture Implementation:</strong> Spearheaded "Akshar Amrutam", scaling it to 100,000+ downloads with strict separation of UI, Domain and Data layers.</li>
+              <li><strong>State Management Optimization:</strong> Utilized Flutter Bloc to manage complex states and maintain smooth performance on low-end devices.</li>
+              <li><strong>IoT & Hardware Integration:</strong> Built "Smartindia/Autozon" with real-time MQTT communications and optimized battery usage for companion apps.</li>
+              <li><strong>Global Delivery:</strong> Managed delivery of international projects (DRC USA, Max's Fun Club South Africa).</li>
+            </ul>
+          </article>
+
+          <article class="job">
+            <header class="job-head">
+              <div>
+                <div class="job-company">Phycom Corporations</div>
+                <div class="job-role">Software Engineer - Android</div>
+              </div>
+              <div class="job-date">Apr 2021 — Mar 2022<br/><span class="job-location">Ahmedabad, India</span></div>
+            </header>
+            <ul class="bullets">
+              <li><strong>Hardware Synchronization:</strong> Engineered robust background services for "La Crosse View".</li>
+              <li><strong>Performance Tuning:</strong> Reduced application startup time by 30% and memory footprint by 20% via profiling.</li>
+              <li><strong>Legacy Migration:</strong> Refactored Java codebases to Kotlin, reducing NPEs by ~95%.</li>
+            </ul>
+          </article>
+
+          <article class="job">
+            <header class="job-head">
+              <div>
+                <div class="job-company">Micro App Solutions</div>
+                <div class="job-role">Remote Android Developer</div>
+              </div>
+              <div class="job-date">Aug 2017 — Dec 2019<br/><span class="job-location">Surat, India</span></div>
+            </header>
+            <ul class="bullets">
+              <li><strong>Utility App Development:</strong> Built "Fastrrr-Floating Apps" and "Water Reminder" with careful battery/performance considerations.</li>
+              <li><strong>Geospatial Tech:</strong> Built "OfferzZone", a hyper-local marketplace with Geofencing-based notifications.</li>
+            </ul>
+          </article>
+
+          <article class="job">
+            <header class="job-head">
+              <div>
+                <div class="job-company">Stimulus Consultancy</div>
+                <div class="job-role">Android Developer</div>
+              </div>
+              <div class="job-date">Apr 2016 — Aug 2017<br/><span class="job-location">Ahmedabad, India</span></div>
+            </header>
+            <ul class="bullets">
+              <li><strong>Startup Engineering:</strong> Established CI/CD pipelines and repo structure for early-stage apps.</li>
+              <li><strong>FinTech Logic:</strong> Implemented accurate GST tax logic for a financial app.</li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="section">
+          <h2 class="section-title">Education</h2>
+          <div class="education">
+            <div class="edu-item">
+              <div class="edu-degree">Master of Computer Applications (M.C.A.)</div>
+              <div class="edu-institution">AES College of Computer Science, Ahmedabad University — 2013–2015</div>
+            </div>
+
+            <div class="edu-item">
+              <div class="edu-degree">Bachelor of Computer Applications (B.C.A.)</div>
+              <div class="edu-institution">Navgujarat College of Computer Applications, Gujarat University — 2010–2013</div>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>Last updated: {{ site.time | date: "%Y-%m-%d" }}</div>
     </footer>
   </div>
 </body>
