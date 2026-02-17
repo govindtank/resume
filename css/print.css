@@ -1,0 +1,59 @@
+/* Print stylesheet for A4 / PDF export */
+@page {
+  size: A4;
+  margin: 0.5in;
+}
+
+html, body {
+  background: #fff;
+  color: #000;
+  -webkit-print-color-adjust: exact;
+  font-family: "Times New Roman", Georgia, serif;
+  font-size: 12pt;
+  line-height: 1.15;
+}
+
+/* Container sizing */
+.container {
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+/* Header */
+header { text-align: left; margin: 0 0 8px 0; }
+h1 { font-size: 20pt; margin-bottom: 0; }
+.title { font-size: 11pt; color: #222; margin-bottom: 4px; }
+.contact { font-size: 10pt; color: #222; margin-bottom: 8px; }
+
+/* Section titles */
+.section-title {
+  font-size: 11pt;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 6px;
+  border-bottom: 1px solid #000;
+  padding-bottom: 4px;
+}
+
+/* Lists and bullets */
+.exp-list, .edu-list, .skill-list { margin: 0; padding: 0; }
+.exp-item { margin-bottom: 8px; }
+.bullet { margin: 4px 0 4px 18px; }
+
+/* Avoid orphaned single lines at top/bottom of page */
+.exp-item, .edu-list li, .skill-list li {
+  page-break-inside: avoid;
+}
+
+/* Make links printable as text */
+a[href]:after { content: " (" attr(href) ")"; font-size: 9pt; }
+
+/* Remove any background graphics */
+* { background: transparent !important; }
+
+/* Ensure good contrast */
+strong { font-weight: 700; }
+
+/* Force page breaks at major sections if necessary */
+.section-break { page-break-after: always; }
