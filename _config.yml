@@ -1,6 +1,6 @@
 # Site settings
 title: "Govind Tank Resume"
-description: "A resume template of govind tank."
+description: "Resume of Govind Tank — Senior Mobile & Cross-Platform Application Developer"
 
 # Build settings
 markdown: kramdown
@@ -10,22 +10,20 @@ sass:
 
 # Resume settings
 resume_avatar:                  "true"
-resume_name:                    "Govind S. Tank"
-resume_title:                   "Android Application Developer"
+resume_name:                    "Govind Tank"
+resume_title:                   "Senior Mobile Application Developer (Kotlin | Flutter)"
 resume_contact_email:           "govindtank600@gmail.com"
 resume_contact_telephone:       "(+91) 84604 84061"
 resume_contact_address:         "59/264, Shreenagar Society, Sector 24, Gandhinagar, Gujarat-382024"
-resume_header_contact_info: "Gandhinagar, Gujarat | (+91) 84604 84061 | govindtank600@gmail.com"
-resume_header_intro: "<p> I work as a freelancer cum consultant for mobile application development. I have tried my hands on designing and developing mobile and web applications using various programming languages like; Java, Kotlin, Objective-C, C++. Also have experience building desktop application with .NET technology. I have tried my skills in building complete mobile applicaions from system-requirement generation, prototyping, designing, coding, deplyoing.</p>"
+resume_header_contact_info:     "Gandhinagar, Gujarat | (+91) 84604 84061 | govindtank600@gmail.com"
+resume_header_intro: >
+  <p>High-performance Senior Mobile Application Developer with 9+ years of experience architecting scalable Android (Kotlin/Java) and Cross-Platform (Flutter) solutions. Proven track record of delivering applications serving <strong>100,000+ active users</strong> with <strong>99.9% crash-free stability</strong>. Specialized in Clean Architecture, MVVM/Bloc patterns, and modern UI toolkits like Jetpack Compose. Forward-thinking advocate for <strong>AI-augmented development</strong>, leveraging coding agents to accelerate delivery cycles and enhance code quality.</p>
 
 # use "yes" to display the email contact button,
 # "no" to display an "I'm not looking for work" message,
-# or remove the resume_looking_for_work option entirely
-# to leave blank
 resume_looking_for_work:        "yes"
 
 # Decide which sections to use
-# comment out to hide
 resume_section_experience:      true
 resume_section_education:       true
 resume_section_projects:        true
@@ -33,23 +31,15 @@ resume_section_skills:          true
 #resume_section_recognition:     true
 resume_section_links:           true
 resume_section_associations:    true
-# resume_section_interests:       true
 
 # Resume social links
-# uncomment the options you wish to display, and add your own URL
 resume_social_links:
   resume_github_url:            "https://github.com/govindtank/"
-  resume_twitter_url:           "http://twitter.com/govindtank4"
- # resume_dribbble_url:          "https://dribbble.com/govindtank"
+  resume_twitter_url:           "http://x.com/govindtank4"
   resume_facebook_url:          "https://facebook.com/govind.tank.77"
   resume_linkedin_url:          "https://www.linkedin.com/in/govindtank"
-  # resume_instagram_url:         "insert your Instagram URL here"
-  resume_website_url:           "http://govindtank.github.io/"
+  resume_website_url:           "https://govindtank.github.io/"
 resume_print_social_links:      true
 
 # Design settings
 resume_theme:                   default
-
-# Note: when editing locally, remember to restart
-# your Jekyll server when you edit this file. Changes
-# to _config.yml are only recognized when the server starts
