@@ -9,7 +9,50 @@ html, body {
   font-size: 11pt;
   line-height: 1.18;
 }
+/* Print-friendly rules: single column, compact spacing */
 
+@page { size: A4; margin: 0.6in; }
+
+html, body {
+  color: #000;
+  background: #fff;
+  font-family: "Times New Roman", serif;
+  font-size: 11pt;
+  line-height: 1.18;
+}
+
+.page { max-width: 100%; margin: 0; padding: 0; }
+
+/* Force single column for print */
+.layout { display:block; padding:0; margin:0; }
+.sidebar { display:block; width:100%; }
+.content { display:block; width:100%; }
+
+/* Header adjustments */
+.site-header { display:block; padding:0 0 8px 0; border-bottom:1px solid #222; }
+.name { font-size:18pt; color:#000; margin-bottom:4px; }
+.role { font-size:10pt; color:#000; }
+
+/* Compact cards */
+.card { border:none; padding:0; margin-bottom:8px; }
+.card-title { font-size:11pt; color:#000; margin-bottom:4px; }
+
+/* Sections */
+.section-title { color:#000; font-size:11pt; border-bottom:1px solid #000; margin:8px 0; padding-bottom:4px; }
+
+/* Bullets and spacing */
+.bullets { padding-left:18px; }
+.bullets li { margin-bottom:6px; font-size:11pt; }
+
+/* Avoid page-break inside job bullets */
+.job, .edu-item { page-break-inside: avoid; }
+
+/* Remove link decorations; print URL after link */
+a[href]:after { content: " (" attr(href) ")"; font-size:9pt; color:#000; }
+a { color: #000; text-decoration: none; }
+
+/* Ensure no background colors */
+* { background: transparent !important; }
 .page { max-width: 100%; margin: 0; padding: 0; }
 
 /* Force single column for print */
