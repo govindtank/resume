@@ -1,59 +1,37 @@
-# resume-template
+# resume-template (customized for Govind Tank)
 
-*A simple Jekyll + GitHub Pages powered resume template.*
+This repository is a Jekyll + GitHub Pages resume for Govind Tank. It has been customized to include an updated professional summary, technical skills, experience and an A4 printable stylesheet for PDF export.
 
-![img](images/screenshot.png)
+## Local testing
 
-## Docs
+1. Clone the repo:
+   git clone <repo-url>
+2. Change into the repo:
+   cd resume
+3. Install dependencies:
+   bundle install
+4. Run locally:
+   bundle exec jekyll serve
+5. Open:
+   http://localhost:4000
 
-### Running locally
+## What changed in this branch
+- Updated _config.yml with new header, contact, and professional summary.
+- Added a custom resume layout at `_layouts/resume.html`.
+- Added `css/print.css` — A print-focused stylesheet for A4 PDF export.
+- Updated README to include PDF/export instructions.
 
-To test locally, run the following in your terminal:
+## Exporting to PDF (print-friendly)
+1. Open the site locally (or the live GitHub Pages URL) in Chrome.
+2. Use the browser Print dialog (Ctrl/Cmd+P).
+3. Set Destination to "Save as PDF".
+4. Under More Settings:
+   - Paper size: A4
+   - Scale: default (adjust if needed)
+   - Margins: Default (or set to Minimum)
+   - Ensure Background graphics is checked for consistent rendering
+5. Save. The layout is tuned to produce a clean A4 PDF.
 
-1. Clone repo locally
-1. `bundle install`
-2. `bundle exec jekyll serve`
-3. Open your browser to `localhost:4000`
-
-### Customizing
-
-First you'll want to fork the repo to your own account. Then clone it locally and customize, or use the GitHub web editor to customize.
-
-#### Options/configuration
-
-Most of the basic customization will take place in the `/_config.yml` file. Here is a list of customizations available via `/_config.yml`:
-
-[...write these out...]
-
-#### Editing content
-
-Most of the content configuration will take place in the `/_layouts/resume.html` file. Simply edit the markup there accordingly
-
-### Publishing to GitHub Pages for free
-
-[GitHub Pages](https://pages.github.com/) will host this for free with your GitHub account. Just make sure you're using a `gh-pages` branch, and the site will automatically be available at `yourusername.github.io/resume-template` (you can rename the repo to resume for your own use if you want it to be available at `yourusername.github.io/resume`). You can also add a CNAME if you want it to be available at a custom domain...
-
-### Configuring with your own domain name
-
-To setup your GH Pages site with a custom domain, [follow the instructions](https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages/) on the GitHub Help site for that topic.
-
-### Themes
-
-Right now resume-template only has one theme. More are coming :soon: though. :heart:
-
-## Roadmap
-
-A feature roadmap is [available here](https://github.com/jglovier/resume-template/projects/1). If you features suggestions, please [open a new issue](https://github.com/jglovier/resume-template/issues/new).
-
-## Contributing
-
-If you spot a bug, or want to improve the code, or even make the dummy content better, you can do the following:
-
-1. [Open an issue](https://github.com/jglovier/resume-template/issues/new) describing the bug or feature idea
-2. Fork the project, make changes, and submit a pull request
-
-## License
-
-The code and styles are licensed under the MIT license. [See project license.](LICENSE) Obviously you should not use the content of this demo repo in your own resume. :wink:
-
-Disclaimer: Use of Homer J. Simpson image and name used under [Fair Use](https://en.wikipedia.org/wiki/Fair_use) for educational purposes. Project license does not apply to use of this material.
+## Notes
+- Customize further by editing `_config.yml` and `_layouts/resume.html`.
+- To change which sections are displayed, toggle the `resume_section_*` flags in `_config.yml`.
