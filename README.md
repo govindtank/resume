@@ -32,6 +32,6 @@ This repository is a Jekyll + GitHub Pages resume for Govind Tank. It has been c
    - Ensure Background graphics is checked for consistent rendering
 5. Save. The layout is tuned to produce a clean A4 PDF.
 
-## Notes
+## Notes 
 - Customize further by editing `_config.yml` and `_layouts/resume.html`.
 - To change which sections are displayed, toggle the `resume_section_*` flags in `_config.yml`.
